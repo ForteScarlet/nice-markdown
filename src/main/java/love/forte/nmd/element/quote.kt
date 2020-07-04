@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020. ForteScarlet All rights reserved.
  * Project  nice-markdown
- * File     Markdown.kt
+ * File     quote.kt
  *
  * You can contact the author through the following channels:
  * github https://github.com/ForteScarlet
@@ -11,12 +11,16 @@
  *
  */
 
-package love.forte.nmd
+package love.forte.nmd.element
 
 /**
- * mark down
+ * quote
+ * ```
+ * > quote text
+ * >> quote text
+ * >>> ...
+ *
+ * ```
+ *
  */
-open class Markdown {
-
-}
-
+interface MarkdownQuote: MarkdownElement

@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2020. ForteScarlet All rights reserved.
  * Project  nice-markdown
- * File     Markdown.kt
+ * File     code.kt
  *
  * You can contact the author through the following channels:
  * github https://github.com/ForteScarlet
@@ -11,12 +11,22 @@
  *
  */
 
-package love.forte.nmd
+@file:Suppress("unused")
+
+package love.forte.nmd.element
+
 
 /**
- * mark down
+ * md code
+ * ```[type]
+ * `代码内容`
+ *
+ * \```
+ *  代码...
+ *  代码...
+ *  代码...
+ *  \```
+ *
+ * ```
  */
-open class Markdown {
-
-}
-
+interface MarkdownCode: MarkdownElement
